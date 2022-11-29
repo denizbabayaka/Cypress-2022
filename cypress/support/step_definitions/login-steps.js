@@ -8,3 +8,15 @@ Given('I access the WebdriverUniversity Login Portal Page', () => {
 When("I enter a username {word}", (userName) => {
     cy.get("#text").type(userName);
 })
+
+And("I enter a password {word}", (password) => {
+    cy.get("#password").type(password);
+})
+
+And("I click on the login button",  ()=> {
+    cy.get("#login-button").click();
+})
+
+And('I should be presented with the following message {word} {word}', (message, message2) => {
+    
+})
